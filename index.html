@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
+
+  
+<style>
+  #Video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+  
 <head>
 <title>Brochure interrativa </title>
 </head>
 
-<body>
-<p>video</p>
-  <video src="brochure.mp4"></video>
-</body>
-
+<body> 
+  <!--video -->
+<video autoplay id="Video">
+  <source src="brochure.mp4" type="video/mp4">
+</video>
+<div class="content">
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+  
 </html>
