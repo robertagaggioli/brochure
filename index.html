@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html>
   
-  <script>
-  $( document ).ready(function() {
-var ctrlVideo = document.getElementById("Video"); 
- 
-$('button').click(function(){
-  if ($('button').hasClass("active")){
-    
-        ctrlVideo.play();
-    
-    $('button').html("Pause");
-    $('button').toggleClass("active");
-  } else {
-    
-        ctrlVideo.pause();
-    
-    $('button').html("play");
-    $('button').toggleClass("active");
-  }
-});
- 
-});
-  </script>
-  
 <style>
   #Video {
   position: absolute;
@@ -40,24 +17,7 @@ $('button').click(function(){
   transition: all 1s;
 }
   
-  
-  button {
-    background-color: #666;
-    border: medium none;
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    left: 0;
-    margin: 0 auto;
-    padding: 8px 16px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-  
-  button.active {
-  background-color: #0077a2;
-}
+
 </style>
   
 <head>
@@ -67,16 +27,11 @@ $('button').click(function(){
 <body> 
   <!--video -->
   
-<button class="active">play</button>
 <video id="Video" preload="auto" controls>
   <source src="brochure.mp4" type="video/mp4">
 </video>
 
   
-  
-  
-  
-  <script></script>
 </html>
 
   
