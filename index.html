@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
-
+  
+  <script>
+  $( document ).ready(function() {
+var ctrlVideo = document.getElementById("Video"); 
+ 
+$('button').click(function(){
+  if ($('button').hasClass("active")){
+    
+        ctrlVideo.play();
+    
+    $('button').html("Pause");
+    $('button').toggleClass("active");
+  } else {
+    
+        ctrlVideo.pause();
+    
+    $('button').html("play");
+    $('button').toggleClass("active");
+  }
+});
+ 
+});
+  </script>
   
 <style>
   #Video {
@@ -33,6 +55,9 @@
     top: 50%;
 }
   
+  button.active {
+  background-color: #0077a2;
+}
 </style>
   
 <head>
@@ -47,6 +72,11 @@
   <source src="brochure.mp4" type="video/mp4">
 </video>
 
+  
+  
+  
+  
+  <script></script>
 </html>
 
   
